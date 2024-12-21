@@ -3,8 +3,8 @@ import 'package:dalil/core/utilits/app_size.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class onboardSmoothPageIndecator extends StatelessWidget {
-  const onboardSmoothPageIndecator({
+class OnboardSmoothPageIndecator extends StatelessWidget {
+  const OnboardSmoothPageIndecator({
     super.key,
     required this.controller,
   });

@@ -65,6 +65,12 @@ abstract class AppStyle {
     fontSize: AppSize.setFont(12),
     color: AppColor.lightGrey,
   );
+  static final TextStyle poppins400wAnd16sizeDeepBrown = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w400,
+    fontSize: AppSize.setFont(16),
+    color: AppColor.deepBrown,
+  );
   static final TextStyle saira700wAnd32sizeWhite = TextStyle(
     fontFamily: AppString.pacificoFont,
     fontWeight: FontWeight.w700,

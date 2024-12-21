@@ -11,7 +11,7 @@ import 'package:dalil/feature/auth/presentation/widgets/welcome_text_widget.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../widgets/forgetImageWidget.dart';
+import '../widgets/forget_image_widget.dart';
 
 class ForgetPasswordView extends StatelessWidget {
   const ForgetPasswordView({super.key});

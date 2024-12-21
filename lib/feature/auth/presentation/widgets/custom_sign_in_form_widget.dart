@@ -4,7 +4,7 @@ import 'package:dalil/core/utilits/app_constant.dart';
 import 'package:dalil/core/widgets/custom_button.dart';
 import 'package:dalil/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:dalil/feature/auth/presentation/cubit/auth_state.dart';
-import 'package:dalil/feature/auth/presentation/widgets/custome_have_acount_widget.dart';
+import 'package:dalil/feature/auth/presentation/widgets/custom_have_acount_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -75,7 +75,6 @@ class CustomSignInFormWidget extends StatelessWidget {
                                 .read<AuthCubit>()
                                 .signInWithEmailAndPassword();
                           }
-                          print('===================done');
                         },
                         text: AppString.signIn),
 

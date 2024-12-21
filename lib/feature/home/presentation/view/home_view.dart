@@ -6,7 +6,7 @@ import 'package:dalil/feature/home/presentation/widgets/custom_home_listview.dar
 import 'package:flutter/material.dart';
 
 import '../functions/historcal_list.dart';
-import '../widgets/custom_home_appBAr.dart';
+import '../widgets/custom_home_appbar.dart';
 import '../widgets/custom_title_widget.dart';
 
 class HomeView extends StatelessWidget {
@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
           ),
           _buildSizedBoxFromHieght(32),
           //!historicalPeriods
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: CustomHeaderText(
               text: AppString.historicalPeriods,
             ),
@@ -42,7 +42,7 @@ class HomeView extends StatelessWidget {
           ),
           _buildSizedBoxFromHieght(32),
           //!historicalCharacters
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
               child: CustomHeaderText(text: AppString.historicalCharacters)),
           _buildSizedBoxFromHieght(16),
           // !getCarachterList
@@ -51,7 +51,7 @@ class HomeView extends StatelessWidget {
               child: CustomListViewWidget(list: getCarachterList())),
           _buildSizedBoxFromHieght(32),
           //!historicalSouvenirs
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: CustomHeaderText(text: AppString.historicalSouvenirs),
           ),
           _buildSizedBoxFromHieght(16),

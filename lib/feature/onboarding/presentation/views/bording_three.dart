@@ -31,7 +31,7 @@ class OnbordingThreeView extends StatelessWidget {
           imagePath: Assets.assetsImgaesOnboardingone,
         ),
         customSizedBoxFromHieght(24),
-        onboardSmoothPageIndecator(controller: controller),
+        OnboardSmoothPageIndecator(controller: controller),
         customSizedBoxFromHieght(30),
         CustomOnbordingtext(
           text: AppString.onboardin1Title,

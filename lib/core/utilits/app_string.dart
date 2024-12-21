@@ -75,4 +75,16 @@ you to continue the search journey''';
   static const String battleofJaffa = 'Battle of Jaffa';
   //!search
   static const String searchDeepIntoTheHistory = 'Search deep into the history';
+
+  //!profile constant vlaues
+
+  static const String profile = 'Profile';
+  static const String account = 'Account';
+  static const String editProfile = 'Edit Profile';
+  static const String notification = 'Notification';
+  static const String general = 'General';
+  static const String settings = 'Settings';
+  static const String security = 'Security';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String logOut = 'Log Out';
 }

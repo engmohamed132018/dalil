@@ -30,7 +30,7 @@ class OnbordingTwoView extends StatelessWidget {
           imagePath: Assets.assetsImgaesOnboarding2,
         ),
         customSizedBoxFromHieght(24),
-        onboardSmoothPageIndecator(controller: controller),
+        OnboardSmoothPageIndecator(controller: controller),
         customSizedBoxFromHieght(30),
         CustomOnbordingtext(
           text: AppString.onboardin2Title,

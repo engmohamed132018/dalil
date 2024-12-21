@@ -36,7 +36,7 @@ class SearchView extends StatelessWidget {
                 child: customSizedBoxFromHieght(16),
               ),
               //!text recent
-              const SliverToBoxAdapter(
+              SliverToBoxAdapter(
                 child: CustomHeaderText(text: 'recent'),
               ),
               SliverToBoxAdapter(

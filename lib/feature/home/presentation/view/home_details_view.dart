@@ -5,7 +5,7 @@ import 'package:dalil/core/utilits/app_string.dart';
 import 'package:dalil/feature/home/data/model/historical_carachter_model.dart';
 import 'package:dalil/feature/home/presentation/functions/historcal_list.dart';
 import 'package:dalil/feature/home/presentation/widgets/custom_Hostrical_Period_Widget.dart';
-import 'package:dalil/feature/home/presentation/widgets/custom_home_appBAr.dart';
+import 'package:dalil/feature/home/presentation/widgets/custom_home_appbar.dart';
 import 'package:dalil/feature/home/presentation/widgets/custom_home_listview.dart';
 import 'package:dalil/feature/home/presentation/widgets/custom_title_widget.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +47,7 @@ class HomeDetailsView extends StatelessWidget {
                     imagePath1: Assets.assetsImgaesHyksos,
                     imagePath2: Assets.assetsImgaesBattleOfMegiddo)),
             SliverToBoxAdapter(child: customSizedBoxFromHieght(24)),
-            const SliverToBoxAdapter(
+            SliverToBoxAdapter(
                 child: CustomHeaderText(text: AppString.recommendations)),
             SliverToBoxAdapter(child: customSizedBoxFromHieght(16)),
             SliverToBoxAdapter(

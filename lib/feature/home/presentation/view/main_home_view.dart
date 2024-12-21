@@ -4,6 +4,7 @@ import 'package:dalil/feature/home/presentation/cubit/home_cubit.dart';
 import 'package:dalil/feature/home/presentation/cubit/home_state.dart';
 import 'package:dalil/feature/home/presentation/view/home_view.dart';
 import 'package:dalil/feature/home/presentation/widgets/custom_nav_bar.dart';
+import 'package:dalil/feature/profile/presentation/view/profile_view.dart';
 import 'package:dalil/feature/search/presentation/view/search_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,7 +15,7 @@ class HomeMainView extends StatelessWidget {
     HomeView(),
     Center(child: Text(' cart')),
     SearchView(),
-    Center(child: Text(' profile')),
+    ProfileView()
   ];
 
   @override

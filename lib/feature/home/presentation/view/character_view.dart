@@ -3,13 +3,12 @@ import 'package:dalil/core/utilits/app_assets.dart';
 import 'package:dalil/core/utilits/app_size.dart';
 import 'package:dalil/core/utilits/app_string.dart';
 import 'package:dalil/feature/home/data/model/historical_carachter_model.dart';
-import 'package:dalil/feature/home/presentation/widgets/custom_home_appBAr.dart';
+import 'package:dalil/feature/home/presentation/widgets/custom_home_appbar.dart';
 import 'package:dalil/feature/home/presentation/widgets/custom_title_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../functions/historcal_list.dart';
-import '../widgets/character_main_image.dart';
-import '../widgets/character_main_text.dart';
+
 import '../widgets/charactermain_artical_widget.dart';
 import '../widgets/custom_Hostrical_Period_Widget.dart';
 import '../widgets/custom_home_listview.dart';
@@ -63,7 +62,7 @@ class CharacterView extends StatelessWidget {
               ),
             ),
             SliverToBoxAdapter(child: customSizedBoxFromHieght(24)),
-            const SliverToBoxAdapter(
+            SliverToBoxAdapter(
                 child: CustomHeaderText(text: AppString.recommendations)),
             SliverToBoxAdapter(child: customSizedBoxFromHieght(16)),
             SliverToBoxAdapter(
