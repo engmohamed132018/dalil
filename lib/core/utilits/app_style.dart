@@ -17,6 +17,30 @@ abstract class AppStyle {
     fontSize: AppSize.setFont(24),
     color: Colors.black,
   );
+  static final TextStyle poppins500wAnd14sizeDeepBrown = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w500,
+    fontSize: AppSize.setFont(14),
+    color: AppColor.deepBrown,
+  );
+  static final TextStyle poppinsw400wAnd14sizemidBrown = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w400,
+    fontSize: AppSize.setFont(14),
+    color: AppColor.midBrown,
+  );
+  static final TextStyle poppinsw400wAnd20sizeDeepBrown = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w400,
+    fontSize: AppSize.setFont(20),
+    color: AppColor.deepBrown,
+  );
+  static final TextStyle poppinsw400wAnd10sizeMidBrown = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w400,
+    fontSize: AppSize.setFont(10),
+    color: AppColor.midBrown,
+  );
   static final TextStyle poppins300wAnd16sizeBlack = TextStyle(
     fontFamily: AppString.poppinsFont,
     fontWeight: FontWeight.w300,
@@ -34,5 +58,17 @@ abstract class AppStyle {
     fontWeight: FontWeight.w400,
     fontSize: AppSize.setFont(12),
     color: AppColor.midBrown,
+  );
+  static final TextStyle poppins400wAnd12sizeLightGrey = TextStyle(
+    fontFamily: AppString.poppinsFont,
+    fontWeight: FontWeight.w400,
+    fontSize: AppSize.setFont(12),
+    color: AppColor.lightGrey,
+  );
+  static final TextStyle saira700wAnd32sizeWhite = TextStyle(
+    fontFamily: AppString.pacificoFont,
+    fontWeight: FontWeight.w700,
+    fontSize: AppSize.setFont(32),
+    color: Colors.white,
   );
 }

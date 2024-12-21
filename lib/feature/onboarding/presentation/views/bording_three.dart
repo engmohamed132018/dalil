@@ -1,4 +1,5 @@
-import 'package:dalil/core/utilits/app_color.dart';
+import 'package:dalil/core/cachHelper/cach_helper.dart';
+import 'package:dalil/core/functions/get_it_setup.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/functions/function.dart';
@@ -8,6 +9,7 @@ import '../../../../core/utilits/app_string.dart';
 import '../../../../core/utilits/app_style.dart';
 import '../../../../core/widgets/custom_button.dart';
 import '../widgets/custom_text_onboarding.dart';
+import '../widgets/login_now_widget.dart';
 import '../widgets/on_boardingimage.dart';
 import '../widgets/smoothpageindecate.dart';
 
@@ -43,6 +45,8 @@ class OnbordingThreeView extends StatelessWidget {
         customSizedBoxFromHieght(55),
         CustomButton(
             onPressed: () {
+              getIt<CacheHelper>()
+                  .saveData(key: AppConst.onBaoardingIsVisible, value: true);
               goToPage(
                   context: context,
                   pageName: AppConst.signUpRoute,
@@ -50,18 +54,8 @@ class OnbordingThreeView extends StatelessWidget {
             },
             text: AppString.createAccount),
         customSizedBoxFromHieght(16),
-        InkWell(
-          onTap: () {
-            goToPage(
-                context: context, pageName: AppConst.signUpRoute, remove: true);
-          },
-          child: Text(
-            AppString.loginNow,
-            style: AppStyle.poppins300wAnd16sizeBlack.copyWith(
-                color: AppColor.deepBrown,
-                decoration: TextDecoration.underline),
-          ),
-        )
+        const LoginNowWidget(),
+        customSizedBoxFromHieght(16),
       ],
     );
   }

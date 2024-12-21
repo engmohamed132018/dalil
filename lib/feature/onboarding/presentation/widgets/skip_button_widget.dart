@@ -1,4 +1,6 @@
+import 'package:dalil/core/cachHelper/cach_helper.dart';
 import 'package:dalil/core/functions/function.dart';
+import 'package:dalil/core/functions/get_it_setup.dart';
 import 'package:dalil/core/utilits/app_constant.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,9 @@ class SkipButtonWidget extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: TextButton(
-          onPressed: () {
+          onPressed: () async {
+            await getIt<CacheHelper>()
+                .saveData(key: AppConst.onBaoardingIsVisible, value: true);
             goToPage(
                 context: context, pageName: AppConst.signUpRoute, remove: true);
           },

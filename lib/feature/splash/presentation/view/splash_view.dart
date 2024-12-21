@@ -1,7 +1,7 @@
-import 'package:dalil/core/utilits/app_constant.dart';
 import 'package:dalil/core/utilits/app_string.dart';
 import 'package:dalil/core/utilits/app_style.dart';
 import 'package:flutter/material.dart';
+import '../functions/check_user.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -13,9 +13,7 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, AppConst.onBoardingRoute);
-    });
+    checkUserAndVisiablity(context);
     super.initState();
   }
 

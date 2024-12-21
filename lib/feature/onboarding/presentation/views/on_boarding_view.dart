@@ -1,4 +1,3 @@
-import 'package:dalil/core/functions/function.dart';
 import 'package:dalil/core/utilits/app_size.dart';
 import 'package:dalil/feature/onboarding/presentation/views/bording_three.dart';
 import 'package:dalil/feature/onboarding/presentation/views/onboarding_one_view.dart';

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class AppSize {
+  AppSize._();
   static final Size screenSize = MediaQueryData.fromView(
           WidgetsBinding.instance.platformDispatcher.views.first)
       .size;
