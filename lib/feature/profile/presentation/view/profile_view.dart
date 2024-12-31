@@ -5,6 +5,9 @@ import 'package:dalil/core/utilits/app_string.dart';
 
 import 'package:flutter/material.dart';
 
+import '../../../auth/presentation/widgets/welcome_text_widget.dart';
+import '../widgets/profile_acount_atribute_widget.dart';
+import '../widgets/profile_general_attribute_widget.dart';
 import '../widgets/profile_heater_account_widget.dart';
 
 class ProfileView extends StatelessWidget {
@@ -16,6 +19,7 @@ class ProfileView extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: AppSize.setWidth(16)),
       child: CustomScrollView(
         slivers: <Widget>[
+         
           _buildSizedBox(24),
           const SliverToBoxAdapter(
               child: Center(child: WelcomeTextWidget(text: AppString.profile))),
@@ -36,3 +40,5 @@ class ProfileView extends StatelessWidget {
     );
   }
 }
+
+
